@@ -1,0 +1,59 @@
+Project:
+
+    AmiiboHax (By: Andrew Augustine)
+
+
+Exploited Files:
+
+    ??????
+
+
+Description:
+
+    So I recently got back into the video game scene after Legend of Zelda: Breath of the Wild came out earlier this year, and in
+    the game, you can tap an amiibo figure to the left joy-con to get some extra items/buffs. I thought this was really cool, but
+    I really hated carrying a big, oddly shaped figurine in my pocket everywhere I went. So, I decided to make it into a card, 
+    that could fit in your wallet.
+    
+    I started research, and found that amiibos use NTAG215's and had two partitions, one Read-only and one Read/Write. After doing
+    a bit more of research and coding, I found out a way to write game data to NFC tags using an android phone. This writeup
+    documents the fruit of my 3 weeks of labor.
+
+
+Results:
+
+    NFC tags are able to load data into games
+
+
+Tools Used:
+
+    - A couple NTAG215s (Tagstand)
+    - Locked-Secret key file (Found these myself)
+    - Unfixed-Info key file (Found these myself)
+    - TagMo 2.3.2 or 2.3.4 beta [2.3.3 WILL NOT WORK] (Github HiddenRambler/TagMo)
+    - An android phone with NFC capabilities (I used a friend's Galaxy S6)
+    - An Amiibo Dump (Dumped some of my existing amiibos)
+    - HxD or some hex editor (??? Google it ???)
+    - A n3ds/o3ds with Adapter/Switch (Do you really need me to tell you where to get one? Just look at your local Target or something.)
+
+
+Instructions to reproduce:
+
+    - Order some NTAG215s from somewhere online. Whether you decorate them or not is entirely up to you. I just labelled mine.
+    - Install TagMo onto your Android device
+    - Create Locked-Secret.bin and Unfixed-Info.bin (I used HxD to make mine on my computer, and tranferred them over)
+    - Load these files into TagMo
+    - Dump Amiibo (Figurine) using TagMo
+    - Load (Auto) dump onto NTAG215 using TagMo
+    - Test/Register using Nintendo console of choice
+
+
+Exploits Discovered:
+
+    Nothing really. Just had some fun. Not selling them tho
+
+
+Other Resources:
+
+    N/A
+

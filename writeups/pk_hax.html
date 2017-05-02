@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>pkhex</title>
+                <meta name="description" content="for 11.2.0-35u">
+                <meta property="og:locale" content="en_US">
+                <meta property="og:site_name" content="august712's writeups">
+                <meta property="og:title" content="PKHeX">
+                <meta property="og:url" content="http://august712.github.io/writeups/pk_hax.html">
+                <meta property="og:description" content="for 11.2.0-35u">
+                <meta property="og:image" content="http://august712.github.io/thumbnail.png" />
+                <meta name="HandheldFriendly" content="True">
+                <meta name="MobileOptimized" content="320">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                pre {
+		 white-space: pre-wrap;       /* css-3 */
+		 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+		 white-space: -pre-wrap;      /* Opera 4-6 */
+		 white-space: -o-pre-wrap;    /* Opera 7 */
+		 word-wrap: break-word;       /* Internet Explorer 5.5+ */
+		}
+                </style>
+	</head>
+	<body>
+		<pre>Project:</pre>
+		<br>
+		<pre><b>	PKHeX 11.2.0</b> (not mine, just documented by me.)</pre>
+		<br>
+		<pre>Exploited files:</pre>
+		<br>
+		<pre>	- $SDCARD/soundhax-usa-o3ds.m4a</pre>
+		<pre>	- $SDCARD/boot.3dsx</pre>
+		<pre>	- $SDCARD/otherapp.bin (POST5_U_26624_usa_9221.bin)</pre>
+		<pre>	- $SDCARD/3ds/ctr-httpwn/</pre>
+		<pre>	- $SDCARD/3ds/menuhax_manager/</pre>
+		<pre>	- $SDCARD/3ds/save_manager/</pre>
+		<pre>	- $SDCARD/saveDataBackup/main</pre>
+		<br>
+		<pre>Description:</pre>
+		<br>
+		<pre>	a lot of friends have been having trouble getting PKHeX to work so i decided to document my method.</pre>
+		<br>
+		<pre>Results:</pre>
+		<br>
+		<pre>	Pokemon Sun/Moon savedata able to be edited.</pre>
+		<br>
+		<pre>Tools Used:</pre>
+		<br>
+		<pre>	- PKHeX (by kwsch): <a href="https://projectpokemon.org/forums/forums/topic/29182-pkhex-gen-1-7-savpkm-editor/" target="_blank">download (windows)</a></pre>
+		<pre>	- Homebrew Starter Kit (by smealum): <a href="https://smealum.github.io/ninjhax2/starter.zip" target="_blank">download</a></pre>
+		<pre>	- otherapp payload (by smealum): <a href="https://smealum.github.io/3ds/#otherapp" target="_blank">download</a></pre>
+		<pre>	- soundhax (by ???): <a href="http://soundhax.com" target="_blank">download</a></pre>
+		<pre>	- menuhax_manager (by yellows8): <a href="https://github.com/yellows8/3ds_homemenuhax/releases" target="_blank">download</a></pre>
+		<pre>	- ctr-httpwn (by yellows8): <a href="https://github.com/yellows8/ctr-httpwn/releases" target="_blank">download</a></pre>
+		<pre>	- save_manager (by profi200): <a href="https://dl.dropboxusercontent.com/s/6vwld0sg4pkkvcp/save_manager.7z" target="_blank">download</a></pre>
+		<br>
+		<pre>Steps to Reproduce:</pre>
+		<br>
+		<pre>	<b>primary exploit: (installs menuhax)</b></pre>
+		<pre>	1.) get firmware version of device in system settings. must be 11.2.0-35u. if not, system update while 11.2 is current up-to-date version. eject sd card and plug into computer.</pre>
+		<pre>	2.) download tools listed above. place the `3ds/` folder and `boot.3dsx` from the starter pack on the root of the sd card. place `soundhax-usa-o3ds.m4a` on the root of your sd card. place `POST5_U_26624_usa_9221.bin` on the root of your sd card and rename it to `otherapp.bin`. merge the `/3ds` folders from `save_manager.7z`, `ctr-httpwn_v1.2.zip`, and `menuhax_v3.2.zip` with the one on your sd card. create a folder called `saveDataBackup` on the root of your sd card.</pre>
+		<pre>	3.) eject sd card and place back into 3ds. boot up and launch music app. play the song in `/SDCARD` titled "&lt;3 nedwill 2016". </pre>
+		<pre>	4.) make sure device is connected to internet. launch `ctr-httpwn v1.2`. press 'a' and let it run. once done, press 'start' to exit. launch `menuhax_manager v3.2`, select `install` and follow the instructions.</pre>
+		<pre>	5.) if the app closes, relaunch. select `configure menuhax`. Press 'a'. Select `type 1`. then, while holding the left shoulder button, touch the bottom screen. config should save successfully. press 'a' to continue. press 'b' then 'start' to exit.</pre>
+		<pre>	6.) in the homebrew menu, press 'start' and then 'a' to reboot.</pre>
+		<pre>	7.) while holding the left shoulder button, scroll over the face raiders icon. menuhax should enable and boot you into the homebrew launcher (AKA 'hbl').</pre>
+		<br>
+		<pre>	<b>pkhex:</b></pre>
+		<pre>	8.) run `save_manager`. select game using left/right on the d-pad and press 'a' to select.</pre>
+		<pre>	9.) press 'a' to backup. press 'start' to exit app. turn off 3ds and remove sd card.</pre>
+		<pre>	10.) make changes as preferred. then save to sd card, eject, and insert to 3ds.</pre>
+		<pre>	11.) use menuhax to boot to hbl, then run `save_manager`. select game using left/right on the d-pad and press 'a' to select.</pre>
+		<pre>	12.) press '2' to restore to modified backup. press 'start' to exit app. reboot device, and launch game</pre>
+		<pre>	13.) changes should now reflect in game.</pre>
+		<br>
+		<pre>&copy 2017 andrew augustine</pre>
+		<br>
+	</body>
+</html>
