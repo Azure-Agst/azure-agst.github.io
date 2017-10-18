@@ -314,7 +314,7 @@
           <pre id="box8paragraph1" class="code">  0000 0010 (2)<br>- 0000 0100 (4)<br>---------------<br>  0000 ??10 (?)</pre>
         </div>
         
-        <p>Well, you can't do that, because there's no thousands value to carry into the hundreds value to do the math. Error, and we can't subtract. Well, let's take a look at it with an additive outlook. Literally. In our number system, 2-4 is the same thing as 2+-4, isn't it? So let's just flip the byte! 0000 0100 becomes 1111 1011.</p>
+        <p>Well, you can't do that, because there's no thousands value to carry over into the hundreds value to do the math. Error, and we can't subtract. Well, let's take a look at it with an positive outlook. Wait... that givs me an idea! In our number system, 2-4 is the same thing as 2+-4, isn't it? So let's just flip the byte! 0000 0100 becomes 1111 1011.</p>
         
 
         <div id="box9" class="interact">
@@ -348,13 +348,13 @@
         -------------------------> | ------------------------->
         +0  +1  +2  +3  +4  +5     | +0  +1  +2  +3  +4  +5
                         /\         |                 /\
-                        ||         |              /±1/
+                        ||         |              /+1/
                         \/         |             \/  
         -------------------------> | ------------------------->
         -0  -1  -2  -3  -4  -5     | -1  -2  -3  -4  -5  -6
         </pre>
 
-        <p class="mark">[Note: For flipping from a negative byte to a positive byte, we do the same, but rather than add 1, we subtract 1.]</p>
+        <p class="mark">[Note: For flipping from a negative byte to a positive byte, we do the same, add 1. Don’s subtract, that’ll give you a false value.]</p>
         
         <p>Therefore our 1111 1011 would become 1111 1100. (Which is equal to -4!)</p>
         
@@ -387,9 +387,9 @@
 
         <p class="mark" onmouseover="mouseover();" onmouseout="mouseout();">[Note: Oh no! You just got <u>teached</u> you friccin moron! Share this with your friends to totally <u>teach</u> them!] <span class="hidden" id="meme">...chill it's a meme.</span></p>
 
-        <p>Yeah that's pretty much all I have for you. You just learned all about number systems, binary, how to do math in binary, why the absolute value of -5 in binary is actually equal to 4, and most importantly. a good intro to Theoretical Mathematics. According to friends, the Theoretical Mathematics course in college is really hard, but also really interesting, and just filled with stuff like this. If I recall correctly, someone told me that their midterm for the course was to make a number system based on something other than 10 or 2, and they had lots of fun with it. If you're interested in this stuff, be sure to take the course!</p>
+        <p>Yeah that's pretty much all I have for you. You just learned all about number systems, binary, how to do math in binary, why the absolute value of -5 in binary is actually equal to 4, and most importantly, a good intro to Theoretical Mathematics. According to friends, the Theoretical Mathematics course in college is really hard, but also really interesting, and just filled with stuff like this. If I recall correctly, someone told me that their midterm for the course was to make a number system based on something other than 10 or 2, and they had lots of fun with it. If you're interested in this stuff, be sure to take the course!</p>
 
-        <p>Also, if you wanna learn more computing tidbits, be sure to let me know! Follow me on twitter at @Azure_Agst, and I'll be sure to answer any questions you may have. Huge thanks to Hedgeberg and Motesazer for teahing me all about this, and thank you all for reading!</p>
+        <p>Also, if you wanna learn more computing tidbits, be sure to let me know! Follow me on twitter at @Azure_Agst, and I'll be sure to answer any questions you may have. Huge thanks to Hedgeberg and Motesazer for teaching me all about this, and thank you all for reading!</p>
 
         <hr>
 
