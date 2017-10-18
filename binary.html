@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>binary.</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          .bigtext {
+            font-size: 150%;
+          }
+          .mark {
+            background-color: #ffffa8;
+            overflow: hidden;
+          }
+          .code {
+            font-family: Courier;
+            background-color: rgb(24, 24, 24);
+            color: white;
+            overflow: hidden;
+            padding: 2%;
+          }
+          .interact {
+            display: inline-block;
+            width: 50%;
+            margin: 5px;
+            border: 2px solid black;
+          }
+          .hidden {
+            color: #ffffa8;
+          }
+        </style>
+        <script>
+        // ----- GLOBAL SCRIPT ------------------------------
+
+        //padding
+        function padnum(input, long) {
+          input = input.toString();
+          var padding = "";
+          if (input.length < long) {
+            var need = long-input.length;
+            for (i = 0; i < need; i++) { 
+              padding += "0";
+            }
+            return padding+input;
+          } else if (input.length > long) {
+            var sliced = input.slice((input.length-long),input.length)
+            return sliced;
+          } else if (input.length = long) {
+            return input;
+          } else {
+            return "what.";
+          }
+        };
+
+        //decimal to binary number
+        function dec2bin(dec){
+          var bin = (dec >>> 0).toString(2);
+          return padnum(bin, 8);
+        };
+
+        function mouseover(){
+          elem = document.getElementById("meme");
+          elem.setAttribute("style","color: black;");
+        };
+
+        function mouseout(){
+          elem = document.getElementById("meme");
+          elem.setAttribute("style","color: #ffffa8;");
+        };
+        </script>
+    </head>
+    <body>
+        <h1 class="right" dir=rtl>number theory and binary</h1>
+        <h2 class="right" dir=rtl>an interactive page by: andrew augustine</h2>
+        <hr>
+        <p class="bigtext">So let's talk about number systems...</p>
+        
+        <p>What if I told you that the absolute value of -5 is actually equal to... four. You'd probably call me a heretic. It should be 5, because it's 5 steps away from 0, right? Well I'm here to explain to you today why in the world of computing that statement is false, and to teach you all about number systems and my new favorite subject, theoretical mathematics.</p>
+
+        <p>Let's start off with a question. Back before Sanskrit and Cuneiform, what did the ancient humans use to represent number values? In a very broad sense, they first used symbols. These symbols could be anything from leaves to sticks to pebbles. It was simple, and it worked. One symbol represented one, two symbols represented two, and so forth. (In my examples, the letter 'I' will be equal to 1.)</p>
+        
+        <!-- ///// START INTERACTIVE BOX 1 /////////////////////////// -->
+        <div id="box1" class="interact">
+          <b>Example 1:<br>Enter a number 1 thru 20</b>
+          <p id="box1paragraph1" class="code">I</p>
+          <input type="text" name="box1text1" value="1">
+          <script>
+            document.getElementsByName("box1text1")[0].addEventListener('input', update1);
+            var text = ""
+            function update1(){
+              if (this.value <= "0" || this.value > 20) {
+                text = "Error. Number not valid.";
+                document.getElementById("box1paragraph1").innerHTML = text;
+                text = "";
+                return;
+              };
+
+              for (i = 0; i < this.value; i++) { 
+               text += "I";
+              }
+              document.getElementById("box1paragraph1").innerHTML = text;
+              text = "";
+            }
+          </script>
+        </div>
+        <!-- ///// END INTERACTIVE BOX 1 /////////////////////////// -->
+
+        <p>This worked well in small numbers. However once you got to numbers like <code>IIIIIIIIIIIIIIIIIIII</code>, it quickly loses any sense of fun. Having to count every little detail, and easily being able to lose track of where you were, was a pain in the ass. Then, the creators of cuneiform came up with a great idea. What if we made another symbol, that represents more than one? This would make counting numbers a lot easier. (So now, let's set 5 equal to the letter 'O') So now 17 would be <code>OOOII</code>. A lot easier to read, right? This idea was widely accepted, being used in empires all over the world, most famous being the Roman Empire with their numeral system.</p>
+        <p class="mark">[Note: They also did have a bit of a positional system going as well, where 'IV' would equal 4, but let's disregard that for now.]</p>
+        
+        <!-- ///// START INTERACTIVE BOX 2 /////////////////////////// -->
+        <div id="box2" class="interact">
+          <b>Example 2:<br>Enter a number 1 thru 50</b>
+          <p id="box2paragraph1" class="code">O</p>
+          <input type="text" name="box2text1" value="5">
+          <script>
+            document.getElementsByName("box2text1")[0].addEventListener('input', update2);
+            var text2 = ""
+            var Os;
+            var OValue;
+            var remainder;
+            
+            function update2(){
+              Os = Math.trunc(this.value/5);
+              OValue = Os * 5;
+              remainder = this.value-OValue;
+
+              if (this.value <= "0" || this.value > 50) {
+                text2 = "Error. Number not valid.";
+                document.getElementById("box2paragraph1").innerHTML = text2;
+                text2 = "";
+                return;
+              };
+              
+              if (Os > 0){
+                for (i = 0; i < Os; i++) { 
+                text2 += "O";
+                }
+              }
+              for (i = 0; i < remainder; i++) { 
+                text2 += "I";
+              }
+
+              document.getElementById("box2paragraph1").innerHTML = text2;
+              text2 = "";
+            }
+          </script>
+        </div>
+        <!-- ///// END INTERACTIVE BOX 2 /////////////////////////// -->
+
+        <p> As time ran on, innovation came, and with that came the creation of the modern arabic number system that we still use today. This system worked by still using symbols that represented other symbols, but took into account the position of the symbols in the number. This can be represented with the equation of <code>value = number(base^position) + ...</code> For example, let's take the number 123. The value would be equal to <code>1(10^2) + 2(10^1) + 3(10^0)</code></p>
+        <p class="mark">[Note: we start the position exponents to the 0th power, because anything to the power of 1 is itself, not 1. Therefore, you would be missing any values smaller than the base. If you start with numbers to the power of 0, then the system starts at <code>x*1</code>, so you can get values smaller than the base. Also, because arrays start at 0. Don't argue with me on that, I will literally fight any programmer who says that arrays start at 1.]</p>
+        
+        <!-- ///// START INTERACTIVE BOX 3 /////////////////////////// -->
+        <div id="box3" class="interact">
+          <b>Example 3:<br>Enter a number -999 thru 999</b>
+          <p id="box3paragraph1" class="code">0(10^2) + 1(10^1) + 2(10^0) = 12</p>
+          <input type="text" name="box3text1" value="12">
+          <script>
+            document.getElementsByName("box3text1")[0].addEventListener('input', update3);
+            function update3() {
+              if (this.value > 999 || this.value < -999) {
+                document.getElementById("box3paragraph1").innerHTML = "Error. Num not valid.";
+                return;
+              }
+              var num = padnum(this.value, 3)
+              var hundreds = num.slice(0,1);
+              var tens = num.slice(1,2);
+              var ones = num.slice(2,3);
+              document.getElementById("box3paragraph1").innerHTML = hundreds.toString()+"(10^2) + "+tens.toString()+"(10^1) + "+ones.toString()+"(10^0) = "+this.value.toString();
+            }
+          </script>
+        </div>
+        <!-- ///// END INTERACTIVE BOX 3 /////////////////////////// -->
+
+        <p>This makes multiplication and mathematics a lot easier to calculate, and the world switched to the arabic system. This brings us to the creation of computers. Here we have two values: On and off. There isn't a third choice with electricity, so this drove engineers to make a system using binary, the base-2 number system computers use to today. So now, we have a new equation: <br><code>value = number(2^pos) + ...</code></p>
+          
+        <p>This works just fine! For the record, each digit is called a bit, and a group of bits is called a byte. For example, in a 4 bit byte, the number 1 is represented by the binary number 0001. The eights bit is off, the fours bit is off, the twos bit is off, and the ones bit is on. <code>0(2^3)+0(2^2)+0(2^1)+1(2^0) = 0+0+0+1 = 1</code>. Therefore, 2 would be represented by 0010, 3 by 0011, and so forth.</p>
+
+        <!-- ///// START INTERACTIVE BOX 4 /////////////////////////// -->
+        <div id="box4" class="interact">
+            <b>Example 4:<br>Enter a number 0 thru 15</b>
+            <p id="box4paragraph1" class="code">0(2^3) + 0(2^2) + 1(2^1) + 0(2^0) = 2</p>
+            <input type="text" name="box4text1" value="2">
+            <script>
+              document.getElementsByName("box4text1")[0].addEventListener('input', update4);
+              function update4() {
+                if (this.value > 15 || this.value < 0 /*|| this.value.startswith("-")*/) {
+                  document.getElementById("box4paragraph1").innerHTML = "Error. Num not valid.";
+                  return;
+                }
+                var num = dec2bin(this.value)
+                var thousands = num.slice(4,5);
+                var hundreds = num.slice(5,6);
+                var tens = num.slice(6,7);
+                var ones = num.slice(7,8);
+                document.getElementById("box4paragraph1").innerHTML = thousands.toString()+"(2^3) + "+hundreds.toString()+"(2^2) + "+tens.toString()+"(2^1) + "+ones.toString()+"(2^0) = "+this.value.toString();
+              }
+            </script>
+          </div>
+          <!-- ///// END INTERACTIVE BOX 4 /////////////////////////// -->
+
+        <p>But this brings up another question... How do we represent negative numbers in binary? It's not like there's a special bit in a byte that we can activate that makes a number negative. And if we wanted to set the first bit in the byte to just be the negative sign, then the amount of data we could store in a single byte is halved! On a large scale, that's greatly inneficient. 1TB drives would then only store 500GB of data. Servers would need two times as many drives to store the same amount of information. However, engineers came up with an efficient way to solve this problem, called two's compliment. Let's take a look:</p>
+        
+        <p>Instead of reserving a specific bit just for the negative sign, we'll multitask. The greatest bit in a byte will be equal to the negative version of that position's value. It will also signify that this number is negative. So instead of the first bit in a four bit number being equal to 8, it would be equal to -8. From there, we can just add positive values till we get the negative number we want. So now, in our 4 bit number, the positions are equal to -8, 4, 2, and 1.</p>
+        
+        <p>For example, let's represent -3 in a 4 bit number. It would be equal to 1101. <code>-8 + 4 + 0 + 1 = -3</code></p>
+        
+        <!-- ///// START INTERACTIVE BOX 5 /////////////////////////// -->
+        <div id="box5" class="interact">
+            <b>Example 5:<br>Enter a number -8 thru 7</b>
+            <p id="box5paragraph1" class="code">-0(2^3) + 0(2^2) + 1(2^1) + 0(2^0) = 2</p>
+            <input type="text" name="box5text1" value="2">
+            <script>
+              document.getElementsByName("box5text1")[0].addEventListener('input', update5);
+              function update5() {
+                if (this.value > 7 || this.value < -8) {
+                  document.getElementById("box5paragraph1").innerHTML = "Error. Num not valid.";
+                  return;
+                }
+                var num = dec2bin(this.value)
+                var thousands = num.slice(4,5);
+                var hundreds = num.slice(5,6);
+                var tens = num.slice(6,7);
+                var ones = num.slice(7,8);
+                document.getElementById("box5paragraph1").innerHTML = "-"+thousands.toString()+"(2^3) + "+hundreds.toString()+"(2^2) + "+tens.toString()+"(2^1) + "+ones.toString()+"(2^0) = "+this.value.toString();
+              }
+            </script>
+          </div>
+          <!-- ///// END INTERACTIVE BOX 5 /////////////////////////// -->
+
+        <p>This means that half the possible representatable values we have are positive and half are negative? Including 0, we can represent 16 values, 8 positive, 8 negative. "Wait, but we can only go up to positive seven! Zero's not a positive or negative number, is it?" Actually, in the world of computing, zero is positive. The greatest bit in 0 (0000) is set to 0, therefore it's considered positive. And thus, we need to subtract 1 from the greatest bit's absolute value, to get the greatest positive value we can represent.</p>
+        
+        <p>For example, let's take a look at the range of values our 4 bit number can represent. Well, the greatest bit's value is equal to 8, take the absolute value in base-10 (8), and subtract 1 (7). Our greatest value we can represent in a 4 bit number is 7. We can confirm this by adding the values, excluding the first bit as that's negative, and we get 0+4+2+1 = 7. What about the greatest negative value? Just flip it! Activate the greatest bit, and add no positive values to it, and you get the greatest negative value. -8+0+0+0 = -8. Therefore, our range for a 4 bit number is 7/-8.</p>
+        
+        <p>This expands exponentially when we expand to 8 bit numbers, which I will be using for the rest of this document. Our bits now become worth -128, 64, 32, 16, 8, 4, 2, and 1. Let's figure out the range: Absolute value of -128 is 128, subtract one and get 127. Activate the first bit only and you get -128. Our range then becomes 127/-128. 240 more possible values!</p>
+        
+        <!-- ///// START INTERACTIVE BOX 6 /////////////////////////// -->
+        <div id="box6" class="interact">
+          <b>Example 6:<br>Enter a number 0 thru 16<br></b>
+          <i>Note: Typtically 4, 8, 10, and 16 bit bytes are used.</i>
+          <p id="box6paragraph1" class="code">Byte: 00 - Value 1/-2</p>
+          <input type="text" name="box6text1" value="2">
+          <script>
+            document.getElementsByName("box6text1")[0].addEventListener('input', update6);
+            function update6() {
+              if (this.value <= 0 || this.value > 16 || this.value == null || this.value == "-"){
+                document.getElementById("box6paragraph1").innerHTML = "Error. Num not valid.";
+                return;
+              }
+              var bytelength = "";
+              var total = Math.pow(2, this.value-1);
+              var topend = total-1;
+              var lowend = total*-1;
+              for (i = 0; i < this.value; i++) { 
+                bytelength += "0";
+              }
+              document.getElementById("box6paragraph1").innerHTML = "Byte: "+bytelength.toString()+" - Range: "+topend.toString()+"/"+lowend.toString()+"";
+            }
+          </script>
+        </div>
+        <!-- ///// END INTERACTIVE BOX 6 /////////////////////////// -->
+
+        <p>So now we get to talk about doing math with a base 2 number system. Yayyyyyy.</p>
+        
+        <p>Addition's simple. Instead of 1 + 1 being two, 1 + 1 is now equal to 10 which, putting aside two's compliment for now, is 2 in binary. So let's look at 6+9:</p>
+        <p class="mark">[Note: The spaces between the 4-bit clusters mean nothing. Similar to commas between every 3 digits in base-10, we use spaces to make big numbers easy to read. I'll use spaces in the bytes whenever it doesn't interfere with the topic we're learning at the time.]</p>
+        
+        <!-- ///// START INTERACTIVE BOX 7 /////////////////////////// -->
+        <div id="box7" class="interact">
+          <b>Example 7:<br>Enter a number -128 thru 127</b>
+          <p id="box7paragraph1" class="code">Enter a number to add 2 to!</p>
+          <input type="text" name="box7text1" value="2">
+          <script>
+            document.getElementsByName("box7text1")[0].addEventListener('input', update7);
+            function update7() {
+              //eh i'm lazy so pardon my implementation.
+              var secret = "";
+              var input = this.value;
+              var answerdec = +input + 2;
+              var inputbin = dec2bin(input);
+              var answerbin = dec2bin(answerdec);
+              if (answerdec >= 128){
+                answerdec = -128+(answerdec-128);
+                answerdec += "?"
+              };
+              if (this.value > 125 && this.value <= 127){
+                secret = "\n\nCongrats, you found an\neaster egg! We need to\nextend the bytes to 16\nbits to make this valid."
+              } else if (this.value > 127 || this.value < -128 || this.value == "-") {
+                document.getElementById("box7paragraph1").innerHTML = "Error. Num not valid.";
+                return;
+              }
+              document.getElementById("box7paragraph1").innerHTML = "<pre>  00000010 (2)\n+ "+inputbin+" ("+input+")\n------------------\n  "+answerbin+" ("+answerdec+")"+secret+"</pre>";
+            }
+          </script>
+        </div>
+        <!-- ///// END INTERACTIVE BOX 7 /////////////////////////// -->
+
+        <!--
+        <pre>
+          0000 0110 (6)
+        + 0000 1001 (9)
+        ---------------
+          0000 1111 (15)
+        </pre>-->
+        
+        <p class="mark">[Note: If you ever add a number and it becomes larger than the amount of bits in your number has can represent, so for example two eight bit integers adding up to a nine bit int, the greatest bit is called an overflow bit. We can fix this by extending our bits to the next greatest size, but for now, these bits are discarded.]</p>
+
+        <p>What about subtraction? Well that creates some errors. Let's look at 2 minus 4.</p>
+        
+        <div id="box8" class="interact">
+          <b>Example 8:</b>
+          <pre id="box8paragraph1" class="code">  0000 0010 (2)<br>- 0000 0100 (4)<br>---------------<br>  0000 ??10 (?)</pre>
+        </div>
+        
+        <p>Well, you can't do that, because there's no thousands value to carry into the hundreds value to do the math. Error, and we can't subtract. Well, let's take a look at it with an additive outlook. Literally. In our number system, 2-4 is the same thing as 2+-4, isn't it? So let's just flip the byte! 0000 0100 becomes 1111 1011.</p>
+        
+
+        <div id="box9" class="interact">
+          <b>Example 9:</b>
+          <pre id="box9paragraph1" class="code">  0000 0010 (2)<br>+ 1111 1011 (-5?)<br>-----------------<br>  1111 1101 (-3?)</pre>
+        </div>
+        
+        <p>"Wait that makes no sense. We flipped it and it became negative 5? That makes no sense!" Actually it does, you just overlooked one small technical detail.</p>
+        
+        <p> When you flip your number, it has the same offset from the first negative value in our number system as the original does from the first positive value in our number system. In the arabic number system, 0 is the median. Although it technically isn't either, for the sake of demonstration, it'll be equal to +0 and -0. So |-7| is equal to |7|, because both are 7 units away from their respective zeroes, positive and negative. When counting, our positive values go from +0 on up and our negative values go from -0 on down. We can't do that in binary however, because 0 is technically considered a positive number. (Greatest bit is set to 0, making it positive.) So our positive values start counting up from 0, but our negative values counting down from our first negative value, -1.</p>
+        
+        <p>Is your brain mush enough? Here, let me diagram it:</p>
+
+        <pre>
+        Arabic (Base-10)           | Binary
+                                   |
+        -------------------------> | ------------------------->
+        +0  +1  +2  +3  +4  +5     | +0  +1  +2  +3  +4  +5
+                        /\         |                 /\
+                        ||         |                 ||
+                        \/         |                 \/
+        -------------------------> | ------------------------->
+        -0  -1  -2  -3  -4  -5     | -1  -2  -3  -4  -5  -6
+        </pre>
+        
+        <p>So to get the proper flipped value from 0 in binary, we need to add 1 to our now negative byte. </p>
+
+        <pre>
+        Arabic (Base-10)           | Binary
+                                   |
+        -------------------------> | ------------------------->
+        +0  +1  +2  +3  +4  +5     | +0  +1  +2  +3  +4  +5
+                        /\         |                 /\
+                        ||         |              /±1/
+                        \/         |             \/  
+        -------------------------> | ------------------------->
+        -0  -1  -2  -3  -4  -5     | -1  -2  -3  -4  -5  -6
+        </pre>
+
+        <p class="mark">[Note: For flipping from a negative byte to a positive byte, we do the same, but rather than add 1, we subtract 1.]</p>
+        
+        <p>Therefore our 1111 1011 would become 1111 1100. (Which is equal to -4!)</p>
+        
+        <div id="box10" class="interact">
+          <b>Example 10:</b>
+          <pre id="box10paragraph1" class="code">  0000 0010 (2)<br>+ 1111 1100 (-4)<br>----------------<br>  1111 1110 (-2)<br><br>i'm too lazy to program<br>the rest of these up.</pre>
+        </div>   
+
+        <p>So now we know the basics, addition and subtraction. But what about multiplication? It's super easy, just watch.</p>
+
+        <p class="mark">[Note: I'm gonna get rid of the space between the clusters of 4 for the sake of demonstration.]</p>
+
+        <div id="box11" class="interact">
+          <b>Example 11:</b>
+          <pre id="box11paragraph1" class="code">    00000010 (2)<br>  * 00000100 (4)<br>------------------<br>    00000000<br>   00000000<br>  00000010<br>  ...<br>------------------<br>    00001000 (8)</pre>
+        </div>  
+
+        <p>It's just like regular multiplication you did as an elementary schooler, but easier. 0 times whatever is 0. 1 times whatever is whatever. Increment each value, from the 1s to the 2s to the 4s and so forth. Then just add everything up like usual.</p>
+        
+        <p>And this brings us to... Division. This is by far the most complicated of the 4 basic functions to explain. Once again, let's just start off with an example, long division style: 9 divided by 3.</p>
+
+        <div id="box12" class="interact">
+          <b>Example 12:</b>
+          <pre id="box12paragraph1" class="code">        _______11 (3)<br>(3) 0011)00001001 (9)<br>              -11  <br>              011  <br>              -11  <br>               00  </pre>
+        </div>
+
+        <p>I find it a bit easier to convert the bits back into base-10 in my head, and then just do it as usual. In our example we started off with 0011 (3) going into 0100 (4). It goes in once, so put 1 above it, subtract 0011 from 0100 (4-3=1) and carry down the next bit. Rinse and repeat till you get an answer.</p>
+      
+        <hr>
+
+        <p class="mark" onmouseover="mouseover();" onmouseout="mouseout();">[Note: Oh no! You just got <u>teached</u> you friccin moron! Share this with your friends to totally <u>teach</u> them!] <span class="hidden" id="meme">...chill it's a meme.</span></p>
+
+        <p>Yeah that's pretty much all I have for you. You just learned all about number systems, binary, how to do math in binary, why the absolute value of -5 in binary is actually equal to 4, and most importantly. a good intro to Theoretical Mathematics. According to friends, the Theoretical Mathematics course in college is really hard, but also really interesting, and just filled with stuff like this. If I recall correctly, someone told me that their midterm for the course was to make a number system based on something other than 10 or 2, and they had lots of fun with it. If you're interested in this stuff, be sure to take the course!</p>
+
+        <p>Also, if you wanna learn more computing tidbits, be sure to let me know! Follow me on twitter at @Azure_Agst, and I'll be sure to answer any questions you may have. Huge thanks to Hedgeberg and Motesazer for teahing me all about this, and thank you all for reading!</p>
+
+        <hr>
+
+        <code>&copy; 2017 Andrew Augustine</code>
+      </body>
+</html>
