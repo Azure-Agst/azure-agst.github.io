@@ -264,14 +264,14 @@
 
         <p>So now we get to talk about doing math with a base 2 number system. Yayyyyyy.</p>
         
-        <p>Addition's simple. Instead of 1 + 1 being two, 1 + 1 is now equal to 10 which, putting aside two's compliment for now, is 2 in binary. So let's look at 6+9:</p>
+        <p>Addition's simple. Instead of 1 + 1 being two, 1 + 1 is now equal to 10 which, putting aside two's compliment for now, is 2 in binary. So let's look at the example below:</p>
         <p class="mark">[Note: The spaces between the 4-bit clusters mean nothing. Similar to commas between every 3 digits in base-10, we use spaces to make big numbers easy to read. I'll use spaces in the bytes whenever it doesn't interfere with the topic we're learning at the time.]</p>
         
         <!-- ///// START INTERACTIVE BOX 7 /////////////////////////// -->
         <div id="box7" class="interact">
           <b>Example 7:<br>Enter a number -128 thru 127</b>
           <p id="box7paragraph1" class="code">Enter a number to add 2 to!</p>
-          <input type="text" name="box7text1" value="2">
+          <input type="text" name="box7text1" value="">
           <script>
             document.getElementsByName("box7text1")[0].addEventListener('input', update7);
             function update7() {
