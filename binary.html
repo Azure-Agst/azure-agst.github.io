@@ -32,7 +32,17 @@
         </style>
         <script>
         // ----- GLOBAL SCRIPT ------------------------------
-
+            
+        // Check for small screen
+        if(window.innerWidth <= 800 && window.innerHeight <= 800) {
+          //ew. document.write() is gross.
+          document.write("<h1>woh!</h1>");
+          document.write("<p>this page isnt supported on mobile. please visit again on a computer. thanks!</p>");
+          window.stop();
+        } else {
+          console.log("device is good!");
+        }
+        
         //padding
         function padnum(input, long) {
           input = input.toString();
