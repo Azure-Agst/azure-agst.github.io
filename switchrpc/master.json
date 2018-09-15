@@ -1,0 +1,788 @@
+{
+  "gamelist": [
+    "IMPORTANT",
+    "splatoon",
+    "mk8d",
+    "botw",
+    "smodyssey",
+    "fortnite",
+    "stardew",
+    "arms",
+    "doom",
+    "hwde",
+    "krsa",
+    "snip",
+    "sktt",
+    "glfs",
+    "dktf",
+    "crash",
+    "mrkb",
+    "butcher",
+    "overcook",
+    "swdig2",
+    "rayman",
+    "picross",
+    "hollowk",
+    "gungeon",
+    "loversspace",
+    "fifa18",
+    "celeste",
+    "npp",
+    "pokequest",
+    "fshelter",
+    "wizoflegend",
+    "tboi",
+    "mariotennis",
+    "ys8",
+    "wlf2",
+    "wol",
+    "csp",
+    "lanota",
+    "fastrmx",
+    "xc2",
+    "dbx2",
+    "opus",
+    "binaries",
+    "kamiko",
+    "vvvvvv",
+    "gg2",
+    "bctm",
+    "jsab",
+    "fe",
+    "bayonetta",
+    "bayonetta2",
+    "few",
+    "sushi",
+    "lanoir",
+    "pokken",
+    "octo",
+    "satpc",
+    "neuro",
+    "fext",
+    "mcse",
+    "skyrim",
+    "srr",
+    "puyo",
+    "oxnfr",
+    "monopoly",
+    "jpp2",
+    "taiko",
+    "smania"
+  ],
+  "games": {
+    "IMPORTANT": {
+      "fullname": "PLEASE SEE GITHUB",
+      "appiconid": "home",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "splatoon": {
+      "fullname": "Splatoon 2",
+      "appiconid": "splatoon",
+      "states": [
+        "Don't Display State",
+        "Turf War",
+        "Ranked Battles",
+        "League Battles",
+        "Salmon Run",
+        "Solo Campaign"
+      ]
+    },
+    "mk8d": {
+      "fullname": "Mario Kart 8 Deluxe",
+      "appiconid": "mk8d",
+      "states": [
+        "Don't Display State",
+        "Grand Prix",
+        "Time Trials",
+        "VS Race",
+        "Battle",
+        "Racing Online",
+        "Mario Kart TV"
+      ]
+    },
+    "botw": {
+      "fullname": "Breath of the Wild",
+      "appiconid": "botw",
+      "states": [
+        "Don't Display State",
+        "Finding Korok Seeds",
+        "Completing Shrines",
+        "Exploring Hyrule"
+      ]
+    },
+    "smodyssey": {
+      "fullname": "Super Mario Odyssey",
+      "appiconid": "smodyssey",
+      "states": [
+        "Don't Display State",
+        "Finding Moons",
+        "Saving Peach",
+        "Collecting Purple Coins"
+      ]
+    },
+    "fortnite": {
+      "fullname": "Fortnite",
+      "appiconid": "fortnite",
+      "states": [
+        "Don't Display State",
+        "In Solos",
+        "In Duos",
+        "In Squads",
+        "In Playgrounds",
+        "In 50v50"
+      ]
+    },
+    "stardew": {
+      "fullname": "Stardew Valley",
+      "appiconid": "stardew",
+      "states": [
+        "Don't Display State",
+        "Mining",
+        "Fishing",
+        "Farming",
+        "Boycotting JojaMart"
+      ]
+    },
+    "arms": {
+      "fullname": "ARMS",
+      "appiconid": "arms",
+      "states": [
+        "Don't Display State",
+        "Grand Prix",
+        "Party Crash",
+        "Ranked Match",
+        "Training",
+        "1-on-100",
+        "V-Ball",
+        "Hoops",
+        "Skillshot",
+        "Hedlok Scramble"
+      ]
+    },
+    "hwde": {
+      "fullname": "Hyrule Warriors: Definitive Edition",
+      "appiconid": "hwde",
+      "states": [
+        "Don't Display State",
+        "Capturing Keeps",
+        "Taking Outposts",
+        "Executing Combos"
+      ]
+    },
+    "doom": {
+      "fullname": "DOOM",
+      "appiconid": "doom",
+      "states": [
+        "Don't Display State",
+        "Slaying Demons",
+        "Harvesting Souls",
+        "Killing for Glory"
+      ]
+    },
+    "krsa": {
+      "fullname": "Kirby Star Allies",
+      "appiconid": "krsa",
+      "states": [
+        "Don't Display State",
+        "Copying Abilities",
+        "Fighting Bosses",
+        "Teaming Up"
+      ]
+    },
+    "snip": {
+      "fullname": "Snipperclips",
+      "appiconid": "snip",
+      "states": [
+        "Don't Display State",
+        "Noisy Notebook",
+        "Retro Reboot",
+        "Silly Science"
+      ]
+    },
+    "sktt": {
+      "fullname": "Shovel Knight: Treasure Trove",
+      "appiconid": "sktt",
+      "states": [
+        "Don't Display State",
+        "Shovel of Hope",
+        "Plague of Shadows",
+        "Specter of Torment",
+        "King of Cards"
+      ]
+    },
+    "glfs": {
+      "fullname": "Golf Story",
+      "appiconid": "glfs",
+      "states": [
+        "Don't Display State",
+        "Teeing Up",
+        "Hole in One",
+        "Driving Range"
+      ]
+    },
+    "dktf": {
+      "fullname": "Donkey Kong: Tropical Freeze",
+      "appiconid": "dktf",
+      "states": [
+        "Don't Display State",
+        "Going Bananas",
+        "Funky Mode"
+      ]
+    },
+    "crash": {
+      "fullname": "Crash Bandicoot N. Sane Trilogy",
+      "appiconid": "crash",
+      "states": [
+        "Don't Display State",
+        "Playing Crash 1",
+        "Playing Crash 2",
+        "Playing Crash 3",
+        "Doing Time Trials",
+        "Looking for Gems"
+      ]
+    },
+    "mrkb": {
+      "fullname": "Mario + Rabbids Kingdom Battle",
+      "appiconid": "mrkb",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "butcher": {
+      "fullname": "BUTCHER",
+      "appiconid": "butcher",
+      "states": [
+        "Don't Display State",
+        "Speedrun"
+      ]
+    },
+    "overcook": {
+      "fullname": "Overcooked",
+      "appiconid": "overcook",
+      "states": [
+        "Don't Display State",
+        "Campaign",
+        "Versus",
+        "The Lost Morsel",
+        "The Festive Seasoning"
+      ]
+    },
+    "swdig2": {
+      "fullname": "SteamWorld Dig 2",
+      "appiconid": "swdig2",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "rayman": {
+      "fullname": "Mario + Rabbids Kingdom Battle",
+      "appiconid": "rayman",
+      "states": [
+        "Don't Display State",
+        "Kung Foot"
+      ]
+    },
+    "picross": {
+      "fullname": "PICROSS S",
+      "appiconid": "picross",
+      "states": [
+        "Don't Display State",
+        "Picross (Singleplayer)",
+        "Mega Picross (Singleplayer)",
+        "Picross (Multiplayer)",
+        "Mega Picross (Multiplayer)"
+      ]
+    },
+    "hollowk": {
+      "fullname": "Hollow Knight",
+      "appiconid": "hollowk",
+      "states": [
+        "Don't Display State",
+        "Speedrun",
+        "Soul Steel"
+      ]
+    },
+    "gungeon": {
+      "fullname": "Enter The Gungeon",
+      "appiconid": "gungeon",
+      "states": [
+        "Don't Display State",
+        "In The Gungeon",
+        "Challenge Mode",
+        "Boss Rush",
+        "Chamber 1 - Keep of the Lead Lord",
+        "Chamber 2 - Gungeon Proper",
+        "Chamber 3 - Black Powder Mine",
+        "Chamber 4 - Hollow",
+        "Chamber 5 - Forge",
+        "Chamber 6 - Bullet Hell"
+      ]
+    },
+    "loversspace": {
+      "fullname": "Lovers in a Dangerous Spacetime",
+      "appiconid": "loversspace",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "fifa18": {
+      "fullname": "FIFA 2018",
+      "appiconid": "fifa18",
+      "states": [
+        "Don't Display State",
+        "Ultimate Team"
+      ]
+    },
+    "celeste": {
+      "fullname": "Celeste",
+      "appiconid": "celeste",
+      "states": [
+        "Don't Display State",
+        "A-Side",
+        "B-Side",
+        "C-Side",
+        "Speedrunning",
+        "Collecting Strawberries"
+      ]
+    },
+    "npp": {
+      "fullname": "N++",
+      "appiconid": "npp",
+      "states": [
+        "Don't Display State",
+        "Speedrunning"
+      ]
+    },
+    "pokequest": {
+      "fullname": "Pokemon Quest",
+      "appiconid": "pokequest",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "fshelter": {
+      "fullname": "Fallout Shelter",
+      "appiconid": "fshelter",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "wizoflegend": {
+      "fullname": "Wizard of Legend",
+      "appiconid": "wizoflegend",
+      "states": [
+        "Don't Display State",
+        "Co-op"
+      ]
+    },
+    "tboi": {
+      "fullname": "The Binding of Isaac: Afterbirth++",
+      "appiconid": "tboi",
+      "states": [
+        "Don't Display State",
+        "Hard",
+        "Greed Mode"
+      ]
+    },
+    "mariotennis": {
+      "fullname": "Mario Tennis Aces",
+      "appiconid": "mariotennis",
+      "states": [
+        "Don't Display State",
+        "Simple Rules",
+        "Swing Mode",
+        "Adventure",
+        "Tournament",
+        "Free Play"
+      ]
+    },
+    "ys8": {
+      "fullname": "Ys VIII: Lacrimoda Of DANA",
+      "appiconid": "ys8",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "wlf2": {
+      "fullname": "Wolfenstein 2: The New Colossus",
+      "appiconid": "wlf2",
+      "states": [
+        "Don't Display State",
+        "Fighting Nazis",
+        "Recouping in the Hub"
+      ]
+    },
+    "wol": {
+      "fullname": "West of Loathing",
+      "appiconid": "wol",
+      "states": [
+        "Don't Display State",
+        "Walking Stupidly",
+        "Doing Stupid Sidequests",
+        "Fighting Reanimated Skeletons",
+        "Cowering from Pyroboves",
+        "Tinkering with El Vibrato Tech",
+        "Wandering Aimlessly",
+        "Trading with Wanderin' Sally"
+      ]
+    },
+    "csp": {
+      "fullname": "Cave Story+",
+      "appiconid": "csp",
+      "states": [
+        "Don't Display State",
+        "Story Mode",
+        "Curly Story",
+        "Jukebox",
+        "Machine Gun Challenge",
+        "Sand Pit",
+        "Sanctuary Time Attack",
+        "Boss Attack",
+        "Wind Fortress",
+        "Nemesis Challenge"
+      ]
+    },
+    "lanota": {
+      "fullname": "Lanota",
+      "appiconid": "lanota",
+      "states": [
+        "Don't Display State",
+        "Enjoying some Music",
+        "Browsing the Songlist"
+      ]
+    },
+    "fastrmx": {
+      "fullname": "Fast RMX",
+      "appiconid": "fastrmx",
+      "states": [
+        "Don't Display State",
+        "Singleplayer",
+        "Online Multiplayer"
+      ]
+    },
+    "xc2": {
+      "fullname": "Xenoblade Chronicles 2",
+      "appiconid": "xc2",
+      "states": [
+        "Don't Display State",
+        "Farming Blades"
+      ]
+    },
+    "dbx2": {
+      "fullname": "Dragon Ball Xenoverse 2",
+      "appiconid": "dbx2",
+      "states": [
+        "Don't Display State",
+        "In Lobby",
+        "Doing PQ"
+      ]
+    },
+    "opus": {
+      "fullname": "OPUS: The Day We Found Earth",
+      "appiconid": "opus",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "binaries": {
+      "fullname": "Binaries",
+      "appiconid": "binaries",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "kamiko": {
+      "fullname": "Kamiko",
+      "appiconid": "kamiko",
+      "states": [
+        "Don't Display State",
+        "Playing as Yamato",
+        "Playing as Uzume",
+        "Playing as Hinome"
+      ]
+    },
+    "vvvvvv": {
+      "fullname": "VVVVVV",
+      "appiconid": "vvvvvv",
+      "states": [
+        "Don't Display State",
+        "Main Story",
+        "Time Trials",
+        "Intermissions",
+        "No-Death Mode",
+        "Flip Mode"
+      ]
+    },
+    "gg2": {
+      "fullname": "Gal*Gun 2",
+      "appiconid": "gg2",
+      "states": [
+        "Don't Display State",
+        "Shooting Pheromones",
+        "Sweeping Demons",
+        "With Chiru",
+        "With Risu",
+        "With Nanako",
+        "With Kurona"
+      ]
+    },
+    "bctm": {
+      "fullname": "Bloodstained: Curse of the Moon",
+      "appiconid": "bctm",
+      "states": [
+        "Don't Display State",
+        "Fighting Demons of the Night"
+      ]
+    },
+    "jsab": {
+      "fullname": "Just Shapes and Beats",
+      "appiconid": "jsab",
+      "states": [
+        "Don't Display State",
+        "Jammin in the Menus",
+        "Story Mode",
+        "Challenge Mode",
+        "Party Mode"
+      ]
+    },
+    "fe": {
+      "fullname": "Fe",
+      "appiconid": "fe",
+      "states": [
+        "Don't Display State",
+        "Singing to Animals",
+        "Exploring the Land"
+      ]
+    },
+    "bayonetta": {
+      "fullname": "Bayonetta",
+      "appiconid": "bayonetta",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "bayonetta2": {
+      "fullname": "Bayonetta 2",
+      "appiconid": "bayonetta2",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "few": {
+      "fullname": "Fire Emblem Warriors",
+      "appiconid": "few",
+      "states": [
+        "Don't Display State",
+        "Story Mode",
+        "Free Mode",
+        "History Mode: Invisible Ties",
+        "History Mode: The Path is Yours",
+        "History Mode: The Dark Pontifex",
+        "History Mode: Noble Lady of Caelin",
+        "History Mode: Together to the End",
+        "History Mode [DLC]: Hero Challenge",
+        "History Mode [DLC]: Grief",
+        "History Mode [DLC]: Land of Gods",
+        "History Mode [DLC]: Cold Reception",
+        "History Mode [DLC]: A Brush in the Teeth",
+        "History Mode [DLC]: Princess Minerva",
+        "History Mode [DLC]: Knorda Market",
+        "History Mode [DLC]: Scion of Legend",
+        "History Mode [DLC]: Emmeryn",
+        "History Mode [DLC]: Caravan Dancer",
+        "Grinding for supports",
+        "Farming for materials",
+        "Hunting for Anna"
+      ]
+    },
+    "sushi": {
+      "fullname": "Sushi Striker: The Way of Sushido",
+      "appiconid": "sushi",
+      "states": [
+        "Don't Display State",
+        "Eating sushi",
+        "Recruiting sushi sprites",
+        "Defeating the Empire",
+        "Online Tasteful Battles",
+        "Online Chaos Battles"
+      ]
+    },
+    "lanoir": {
+      "fullname": "L.A. Noire",
+      "appiconid": "lanoir",
+      "states": [
+        "Don't Display State",
+        "Investigating",
+        "Cruising around"
+      ]
+    },
+    "pokken": {
+      "fullname": "Pokken Tournament DX",
+      "appiconid": "pokken",
+      "states": [
+        "Don't Display State",
+        "Solo Campaign",
+        "Local Matches",
+        "Online Matches",
+        "Practice Mode"
+      ]
+    },
+    "octo": {
+      "fullname": "Octopath Traveler",
+      "appiconid": "octo",
+      "states": [
+        "Don't Display State",
+        "Questing",
+        "Hunting monsters",
+        "Grinding",
+        "Playing as Ophilia",
+        "Playing as Cyrus",
+        "Playing as Tressa",
+        "Playing as Olberic",
+        "Playing as Primrose",
+        "Playing as Alfyn",
+        "Playing as Therion",
+        "Playing as H'aanit"
+      ]
+    },
+    "satpc": {
+      "fullname": "Shantae and the Pirate's Curse",
+      "appiconid": "satpc",
+      "states": [
+        "Don't Display State",
+        "Grinding 'Super Shantae Nab'"
+      ]
+    },
+    "neuro": {
+      "fullname": "Neurovoider",
+      "appiconid": "neuro",
+      "states": [
+        "Don't Display State",
+        "Arcade Mode",
+        "Rogue Mode",
+        "Voider Mode"
+      ]
+    },
+    "fext": {
+      "fullname": "Fate/Extella: The Umbral Star",
+      "appiconid": "fext",
+      "states": [
+        "Don't Display State"
+      ]
+    },
+    "mcse": {
+      "fullname": "Minecraft Nintendo Switch Edition",
+      "appiconid": "mcse",
+      "states": [
+        "Don't Display State",
+        "Creative Mode",
+        "Survival Mode"
+      ]
+    },
+    "skyrim": {
+      "fullname": "The Elder Scrolls V: Skyrim",
+      "appiconid": "skyrim",
+      "states": [
+        "Don't Display State",
+        "Fighting a dragon",
+        "Helping citizen",
+        "Looting a dungeon",
+        "Building a house"
+      ]
+    },
+    "srr": {
+      "fullname": "Shining Resonance Refrain",
+      "appiconid": "srr",
+      "states": [
+        "Don't Display State",
+        "Original Mode",
+        "Refrain Mode"
+      ]
+    },
+    "puyo": {
+      "fullname": "Puyo Puyo Tetris",
+      "appiconid": "puyo",
+      "states": [
+        "Don't Display State",
+        "Popping Puyos",
+        "Clearing Tetrominoes",
+        "Adventure",
+        "Arcade",
+        "Online"
+      ]
+    },
+    "oxnfr": {
+      "fullname": "OXENFREE",
+      "appiconid": "oxnfr",
+      "states": [
+        "Don't Display State",
+        "On ferry to Edwards Island",
+        "Using radio",
+        "Getting advice from reflection",
+        "Giving advice as reflection"
+      ]
+    },
+    "monopoly": {
+      "fullname": "Monopoly for Nintendo Switch",
+      "appiconid": "monopoly",
+      "states": [
+        "Don't Display State",
+        "Rolling dice",
+        "Taking turns",
+        "Waiting for other players",
+        "Buying house",
+        "Purchasing hotel",
+        "In jail"
+      ]
+    },
+    "jpp2": {
+      "fullname": "Jackbox Party Pack 2",
+      "appiconid": "jpp2",
+      "states": [
+        "Don't Display State",
+        "In the menu",
+        "Playing Fibbage 2",
+        "Playing Earwax",
+        "Playing Bidiots",
+        "Playing Quiplash XL",
+        "Playing Bomb Corp"
+      ]
+    },
+    "taiko": {
+      "fullname": "Taiko No Tatsujin",
+      "appiconid": "taiko",
+      "states": [
+        "Don't Display State",
+        "Rhythm Game",
+        "Mini Games"
+      ]
+    },
+    "smania": {
+      "fullname": "Sonic Mania",
+      "appiconid": "smania",
+      "states": [
+        "Don't Display State",
+        "Encore Mode",
+        "Time Attack",
+        "Competition",
+        "Blue Spheres",
+        "Mean Bean Machine",
+        "D.A. Garden"
+      ]
+    },
+    "sforces": {
+      "fullname": "Sonic Forces",
+      "appiconid": "sforces",
+      "states": [
+        "Don't Display State",
+        "Viewing the World Map",
+        "Playing Episode Shadow",
+        "Playing in a Sonic Stage",
+        "Playing in a Classic Stage",
+        "Playing in an Avatar Stage"
+      ]
+    }
+  }
+}
