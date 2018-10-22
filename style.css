@@ -1,0 +1,44 @@
+body {
+  padding-top: 2em;
+}
+
+a {
+  color: #727272;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.prof {
+  float: right;
+  height: 100px;
+}
+
+.project_title {
+  font-weight: bold;
+}
+
+.project {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.center {
+  text-align: center;
+}
+.footer {
+  color: #727272;
+}
+
+.icon {
+  display: inline-block;
+  fill: #727272;
+}
