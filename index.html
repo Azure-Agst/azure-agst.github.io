@@ -1,28 +1,30 @@
 <html>
   <head>
-      <title>Andrew Augustine</title>
-      <meta name="description" content="website">
-      <meta property="og:locale" content="en_US">
-      <meta property="og:site_name" content="Andrew Augustine">
-      <meta property="og:title" content="Andrew Augustine - Home">
-      <meta property="og:url" content="http://azureagst.dev">
-      <meta property="og:description" content="website">
-      <meta property="og:image" content="http://s3.azureagst.dev/prof.jpg" />
-      <meta name="google-site-verification" content="fyxNdBfBX4JsxNfXWPFfmUxrQ2zrDl27UuV949xhOJ4" />
-      <meta name="HandheldFriendly" content="True">
-      <meta name="MobileOptimized" content="320">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Augustine</title>
+
+    <!-- Styling -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- Too many meta tags lol -->
+    <meta name="description" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Andrew Augustine">
+    <meta property="og:title" content="Andrew Augustine - Home">
+    <meta property="og:url" content="http://azureagst.dev">
+    <meta property="og:description" content="website">
+    <meta property="og:image" content="http://s3.azureagst.dev/prof.jpg" />
+    <meta name="google-site-verification" content="fyxNdBfBX4JsxNfXWPFfmUxrQ2zrDl27UuV949xhOJ4" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="main">
-      <code>
-        <div>
-          <h1 class="name">Andrew Augustine</h1>
-          <b>Student, Data Analyst, Software Engineer</b>
-          <p><a href="http://s3.azureagst.dev/resume.pdf">Resume</a> - <a href="http://github.com/Azure-Agst">Github</a> - <a href="./writeups/">Writeups</a></p>
-          <p style="color: #f0f0f0">I'll redesign the site NOT using bootstrap later.</p>
-        </div>
-      </code>
+    <div id="root">
+      <div id="text"></div>
+      <div id="console"></div>
     </div>
+    <div id="footer"><a href='javascript:setSkip()'>skip.</a></div>
+    <script src="./script.js"></script>
+    <script src="./animator.js"></script>
   </body>
 </html>

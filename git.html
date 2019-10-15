@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Git Cheat Sheet</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1.title { margin-bottom: 0% }
+            h3.subtext { margin-top: 0% }
+            div.tm { background: black; color: white; font-family: 'Courier New'; margin: 0% 2% 0% 2%; white-space: wrap;}
+            div.tm::after { content: "\A"; white-space: pre; }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <!-- Header -->
+            <h1 class="title">Git Cheatsheet</h1>
+            <h3 class="subtext">By: Andrew 'Azure-Agst' Augustine</h3>
+            <hr>
+
+            <!-- How do I save my work? -->
+            <h3>How do I save my work?</h3>
+            <p>Remember the holy trinity of commands! Make sure you're on a feature or bug branch, and run these:</p>
+            <div class="tm">$ git add *</div>
+            <div class="tm">$ git commit -m "Summary of what you did"</div>
+            <div class="tm">$ git push</div>
+            <p>The <code>git add</code> command tells git to add a file to be staged for the next commit. <i>(Note: Similarly, if you want a file to be removed from git, you can use <code>git rm</code>)</i></p>
+            <p>The <code>git commit</code> command tells git to take a shapshot of the changed you've made to your staged files, and save them as a commit.</p>
+            <p>The <code>git push</code> command takes the commits you've made, and uploads them to github.</p>
+            <hr>
+
+            <!-- Initial Setup -->
+            <h3>How do I initially set up my development environment?</h3>
+            <p>There are a few commands that we'll need to run to get the repo into shape.</p>
+            <p>First, clone the repo and cd into it:</p>
+            <div class="tm">$ git clone  https://github.com/[yourUsernameHere]/CreatorConnect</div>
+            <div class="tm">$ cd CreatorConnect</div>
+            <p>Now, make sure you're looking at the develop branch.</p>
+            <div class="tm">$ git checkout develop</div>
+            <p>So, we have your fork of the repo, but we need to make sure it's in sync with the Hub's repo. To do that, we'll need to set an upstream.</p>
+            <p>Run this command on your computer and check if your response looks like this:</p>
+            <div class="tm">$ git remote -v<br>
+            origin  https://github.com/Azure-Agst/CreatorConnect (fetch)<br>
+            origin  https://github.com/Azure-Agst/CreatorConnect (push)<br>
+            upstream        https://github.com/FSUInnovationHub/CreatorConnect.git (fetch)<br>
+            upstream        https://github.com/FSUInnovationHub/CreatorConnect.git (push)
+            </div>
+            <p>If you're missing the two upstream entries, run this command:</p>
+            <div class="tm">$ git remote add upstream https://github.com/FSUInnovationHub/CreatorConnect.git</div>
+            <p>Now, whwnever you want to sync with the Hub's version of develop, run this:</p>
+            <div class="tm">$ git pull upstream develop</div>
+            <hr>
+
+            <!-- Making a branch -->
+            <h3>How do I go about making a new branch?</h3>
+            <p>We do not allow people to push to the FSUInnovationHub's master or develop branches directly. 
+                We only allow pull requests from feature branches or bug branches to be merged into develop, 
+                and live software to be pushed to master.</p>
+            <p>So how do you name a new branch? Which should you use?</p>
+            <ul>
+                <li>If you're working on a <b>feature</b>, use a feature branch! <br> Feature branches are prefixed with 
+                    <code>f/</code> and are usually one word the describes what you're working on. (I.e. <code>f/newFeature</code>)</li>
+                <li>If you're working on a <b>bug fix</b>, use a bug branch! <br> Bug branches are prefixed with
+                    <code>b/</code> and are numerically assigned in ascending order. (I.e. The 123rd bug fix would be on branch
+                    <code>b/123</code>)</li>
+            </ul>
+            <p>To make a new branch, make sure you're already in the develop branch of your fork, and use this:</p>
+            <div class="tm">$ git checkout -b [newBranchName]</div>
+            <p>This creates a new branch on your local machine. Make sure your upstream is still set by doing <code>git remote.</code></p>
+            <div class="tm">$ git remote -v</div>
+            <p>Once you're on your new branch, make your changes! Use <code>git add</code> and <code>git commit</code> to save your changes to a commit.</p>
+            <p>Once you're ready to push, follow the instructions in the following question.</p>
+            <hr>
+
+            <h3>My current branch has no upstream? What does that mean?</h3>
+            <p>Now, you can't just <code>git push</code> on a new branch because <code>git checkout -b</code> doesn't automatically make a corresponding branch on GitHub for us! To tell GitHub to make a new branch for us, we use this command:</p>
+            <div class="tm">$ git push origin [newBranchName]</div>
+            <p>Github should now make that corresponding branch for us and upload the code from our machine into it. Now, use the website to make a pull request, and merge into develop!</p>
+            <hr>
+
+            <!-- How do I see what files are staged for my next commit? -->
+            <h3>How do I check what files are staged for my next commit?</h3>
+            <p>You can see what files are staged for addition, deletion, modification, or are ignored in your next commit by running this command:</p>
+            <div class="tm">$ git status</div>
+            <hr>
+            
+            <!-- Develop updated! -->
+            <h3>Develop has updated cince I made my feature branch! What do I do?</h3>
+            <p>Don't worry! When you merge your feature branch's commits into develop, it should automatically take care of any conflicts for you.</p>
+            <div class="tm">
+                
+            </div>
+            <hr>
+
+            <!-- Footer -->
+            <br>
+            <i>Copyright (C) 2019 Andrew 'Azure-Agst' Augustine</i>
+        </div>
+    </body>
+</html>
