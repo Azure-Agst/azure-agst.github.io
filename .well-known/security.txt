@@ -1,0 +1,27 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# Security.txt - RFC 9116
+# Ref: https://www.rfc-editor.org/rfc/rfc9116
+
+Contact: mailto:me@azureagst.dev
+Encryption: https://keybase.io/azure_agst/pgp_keys.asc
+Preferred-Languages: en
+
+Canonical: https://azureagst.dev/.well-known/security.txt
+
+Expires: 2022-12-31T23:59:59.000Z
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEVcxXyxSm3LXaromYqPMJ3WhlDm0FAmJp5D8ACgkQqPMJ3Whl
+Dm2Buwv+PnO0ON1VETVJ2moCXDrrPzbMphLQXhgtMIbv32LlbtSyIPDNQESu1/dN
+y4igwEC58Dt62WwNWrc1vjLIfpUJBhENaCxZnOSVB0ktM8+6ZUpGV8C8JDTV9Nbd
+bgYYBTeaPEPGjs5Y0+8JjNDh/KyxuXnbXkzufJQwC652D3+jRvkx+IBAOXMNOBXQ
+LUyUJng9ssew86CwSkLg3s3tJ8DblSX2sECG3+etHO4AZQ6R2pzZswJQHp6mn+VR
+uXUylY5kTxee+24+9F6AYtz6Ovw7i2MOBDtQVclNQlbSuADTJININj3sQNUkoqVG
+WkZRLhhJOKgs63nDgsAWOD/s1TzvVDik0MsM7NvILyxrMLrbvy1clasjdvnbnmvf
+SsV6Zu2hXumra5c2SyRqEBweFiKNgD2veVeDZuJayW+engJ/CWxBSxkRk61O3rD1
+D36Dh4BU3nw2LE48kiRDdrN61gtHuTuka8WSHNdLWmHDYElLrOKnpiIi+1V8ocj7
+zNFPnti3
+=O2lN
+-----END PGP SIGNATURE-----
