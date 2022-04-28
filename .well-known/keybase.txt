@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/azure_agst
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://azureagst.dev
+  * I am azure_agst (https://keybase.io/azure_agst) on keybase.
+  * I have a public key with fingerprint 55CC 57CB 14A6 DCB5 DAAE  8998 A8F3 09DD 6865 0E6D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207b47cd289f3ad404faff83cca53baedcb544c544a1c5fe736d022f2289d9246c0a",
+      "fingerprint": "55cc57cb14a6dcb5daae8998a8f309dd68650e6d",
+      "host": "keybase.io",
+      "key_id": "a8f309dd68650e6d",
+      "kid": "01018c879449002eee62acccc9c495e25d09c676a07c9bb1daa8820c3d64a07bd3870a",
+      "uid": "a8d8f966b851d33c8081f3013c86f219",
+      "username": "azure_agst"
+    },
+    "service": {
+      "hostname": "azureagst.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1651107347,
+  "expire_in": 157680000,
+  "prev": "e2bd745d6cbaffe2957634eb87cbc489bc50a01aa78767f93c6c8dbc631bc2ce",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUn9MVVUcf48fPd6TB64a1JSSO/sjInZ/nnvu20rXTEPJhS2wQXudX/dxfbwf
+vPcEnmDWE03GdDLnVrY0kdCxgomWlD9yy1SirPxDgbRybfyYYaFJPyjrXCZbf3S2
+s3vO935+fc85O73pDo/z0C331RqWE3IOTmAHtkbzmwQcoUnB1yQE2eyH1VIWT/iD
+FhV8gijJoo5VnVAZGqaCqCqqJjJNqBCCNAUjRgnWVJXwiSSimUxXABVl2ZQ5gRqy
+CoiIhGLBtMIBFovGrHCCy2oaIZpOsKQiYAtQhBg0DIigqYgGpQACTWSAcmJNJG4z
+eDiM4qzEivAa3/hn4/0Pfi63KEECdUNVDVGUGWNARoQPg6iGxmSNigYBOkCiTgyM
+JR4AQlkkCgUqr2GqQH029/q7PhSaBgAYahJVFAJFKHFnia+AKUuGDYyzWBiFmI3e
+sD7G/CjAg28sFni93iLMPlq7l/9ibEgJZfWcHo1FEhESqeW/ahKJaNxnUxPJqI1t
+YNh/V8WPrTDlR8kZ9SwWtyJhwSdxJElYtqwENEkSdUXViwXWGLV4DMtGaDqAIh+2
+D7fzCUzGtFpXNQoI5tfJZINDFJVhyG+FqNDARBORKCGkQx3opqEQQCDFBCgSJjJv
+x26sLhyxPXlQFOCicSsQRgnel7DR0+o8kuFwehwFeYUZL3xROXh/15UPRnpa35h7
+f5lp9uNzeNzz5yrtBfPuKFndP8Rviiv2rk553901nRw+Xftt9U/pXc05N499MzDT
+t+63wXs3lflOvtU3U/L206veG2gPdp051fnxn8HYA6+Gj1/fE3f2tT0z1uUteB98
+vm7twLXh7PKmUL+wsHdsZaq/+XuPa9Gh7B1H+/I/y5o+4KLZVX8cC8/f1rH/uc37
+T6ftgL2Fu9xC+Jfyxs7XV7S1no01V146PHl0YvzL1ybK957sHn1p3uT48+68f/Ys
+Si6tqO4Yx0OdOU/dfnbkcmtpbmFhWabriZaKyuqfl1tT0yW55ft6Trz43XZ/5K+h
+wOaKntS2a0seciyour64oS3Ney4VIk2JDxtzj6xZKGe0Lzv/8NZbm4oWPHqBnOse
+eXKy5cBl6ewNzZHZWNTbvPwKmrpRex6Urj3R/ua+uu0vh1555CPXJWfvxeCDq35t
+3ZA8fvii98xjt9cUNaSX3rN7y+SF+8jXd6YGfnS1jP09+In74NUtqOPxpQ0uV97q
+nWVg5adDqd/rlnzVL+bPjGZVxempg8NFWzve6V+sL/sX
+=qzDq
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/azure_agst
+
+==================================================================
