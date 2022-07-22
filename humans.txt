@@ -1,0 +1,12 @@
+/* TEAM */
+
+ 	Andrew Augustine
+	Contact: me [at] azureagst [dot] dev
+	From: Florida, United States
+
+/* SITE */
+
+	Last Update: 2022/06/13
+	Language: English
+	Doctype: HTML5
+	IDE: VS Code
