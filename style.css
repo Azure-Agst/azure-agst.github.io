@@ -15,8 +15,8 @@ html {
     /* set background color */
     background-color: var(--background);
 
-    /* font stuff */
-    font-family: Consolas;
+    /* font stuff, use the first codey looking font */
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
     font-size: 12;
 }
 
