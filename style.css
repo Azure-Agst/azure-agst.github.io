@@ -6,6 +6,9 @@
     disappointed frontend recruiters.
 */
 
+/* import font face */
+@import url('https://fonts.googleapis.com/css?family=Roboto%20Mono&display=swap');
+
 html {
     /* variable declarations */
     --background: #181818;
@@ -16,7 +19,7 @@ html {
     background-color: var(--background);
 
     /* font stuff, use the first codey looking font */
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    font-family: Roboto Mono;
     font-size: 12;
 }
 
@@ -82,5 +85,11 @@ hr {
         margin-left: 5px;
         min-width: 200px;
         max-width: 100%;
+    }
+
+    /* some displays have curved edges, which cuts off
+     * part of the copyright; add margin to compensate */
+    body {
+        margin-bottom: 15px;
     }
   }
