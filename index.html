@@ -7,35 +7,82 @@
       <meta property="og:title" content="Andrew Augustine - Home">
       <meta property="og:url" content="http://azureagst.dev">
       <meta property="og:description" content="website">
-      <meta property="og:image" content="http://s3.azureagst.dev/prof.jpg" />
+      <meta property="og:image" content="/images/favicon-310x310.png" />
       <meta name="google-site-verification" content="fyxNdBfBX4JsxNfXWPFfmUxrQ2zrDl27UuV949xhOJ4" />
       <meta name="HandheldFriendly" content="True">
       <meta name="MobileOptimized" content="320">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-        h1, h3 {
-          margin: 0
-        }
-      </style>
+      <link rel="icon" href="/images/favicon-120x120.png" type="image/png" />
+      <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="main">
-      <code>
-        <div>
-          <h1 class="name">Andrew Augustine</h1>
-          <h3>Student, Sysadmin, Homelabber, Tinkerer</h3><br>
-          <b>Asst. Systems Administrator @ FSU Math</b><br>
-          <b>Computer Science B.S., FSU Class of 2023</b><br>
-          <b>Email:</b> me [at] azureagst [dot] dev<br>
-          <b>PGP Fingerprint:</b> A8F309DD68650E6D<br><br>
+      <div>
+        <h1 class="name">Andrew Augustine</h1>
+        <h3>Student, Sysadmin, Homelabber, Tinkerer</h3>
+      </div>
+      <br>
+      <div>
+        <b>Asst. Systems Administrator @ FSU Math</b><br>
+        <b>Computer Science B.S., FSU Class of 2023</b><br>
+        <b>Email:</b> me [at] azureagst [dot] dev<br>
+        <b>PGP Fingerprint:</b> A8F309DD68650E6D<br>
+      </div>
+      <br>
+      <div>
+        <h3>
           <a href="http://posts.azureagst.dev/">Blog</a> - 
-          <a href="http://github.com/Azure-Agst">Github</a> - 
-          <a href="https://www.linkedin.com/in/aaugustine23/">LinkedIn</a> -
+          <a href="http://github.com/Azure-Agst">GitHub</a> - 
+          <a href="https://www.linkedin.com/in/aaugustine23/">LinkedIn</a> - 
+          <a href="https://steamcommunity.com/id/AzureAgst/">Steam</a> - 
           <a href="https://keybase.io/azure_agst">Keybase</a>
-          <br><br>
-          Copyright (c) 2022 Andrew "Azure_Agst" Augustine
+          <br>
+        </h3>
+      </div>
+
+      <hr>
+
+      <div>
+        <h2>Latest Notable Projects:</h2><br>
+
+        <div class="project">
+          <img class="project-image" src="/images/ghost_card.png">
+          <div class="project-content">
+            <h3><a href="https://posts.azureagst.dev">posts.azureagst.dev</a></h3>
+            My blog! Whenever something interests me, I'll write about it. This mainly consists of
+            programming/hacking content, but can also enclude content about current events and games occasiontlly.
+          </div>
         </div>
-      </code>
+
+        <div class="project">
+          <img class="project-image" src="/images/k3s_card.png">
+          <div class="project-content">
+            <h3><a href="https://posts.azureagst.dev/tales-from-the-homelab/">RPi K3S Cluster</a></h3>
+            My latest endeavor in the world of cloud computing! I now have a little K3S sandbox in my closet to mess
+            around with! Also on the rack lives a WRT1200AC, Synology RS816, M93p Tiny, and a few Mac Minis.
+          </div>
+        </div>
+
+        <div class="project">
+          <img class="project-image" src="/images/canvas2_card.png">
+          <div class="project-content">
+            <h3><a href="https://github.com/Azure-Agst/Canvas2">Canvas2</a></h3>
+            Probably my most in-depth project for university yet, excluding the kernel plugin work I'm not
+            allowed to disclose yet. Canvas2 is a basic Canvas LMS recreation made using Flask and MongoDB.
+            It includes rudimentary plagarism detection, has a full test suite, and is designed to work in
+            containers.
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div>
+        Copyright (c) <span id="year"></span> Andrew "Azure_Agst" Augustine
+        <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+      </div>
+
     </div>
   </body>
 </html>

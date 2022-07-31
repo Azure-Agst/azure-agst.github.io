@@ -1,0 +1,86 @@
+/*
+    I am NOT a frontend dev, lol
+
+    I've done enough bodges at work to know the basics of CSS, 
+    but don't expect any weird tricks from me. Sorry to any
+    disappointed frontend recruiters.
+*/
+
+html {
+    /* variable declarations */
+    --background: #181818;
+    --text-primary: #FFF;
+    --text-secondary: #999;
+
+    /* set background color */
+    background-color: var(--background);
+
+    /* font stuff */
+    font-family: Consolas;
+    font-size: 12;
+}
+
+div, a, h1, h2, h3, hr {
+    /* make all text white */
+    color: var(--text-primary);
+}
+
+h1, h2, h3 {
+    /* idk i just like this look? */
+    margin: 0
+}
+
+a:visited {
+    /* make visited links look darker */
+    color: var(--text-secondary);
+}
+
+.project {
+    /* card border */
+    border: 1px solid #FFF;
+    margin: 5px;
+    padding: 5px;
+
+    /* flexbox container stuff */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.project-image {
+    /* all of the images are 200px wide anyways, so... */
+    max-width: 200px;
+}
+
+.project-content {
+    /* fun stuff, for when text is by side */
+    margin: 3px 0 3px 5px;
+    min-width: 200px;
+    max-width: 70%;
+}
+
+.project-content h3 {
+    /* more room to breathe */
+    margin-bottom: 5px;
+}
+
+hr {
+    /* ^ see last comment ^ */
+    margin: 15px 0 15px 0;
+}
+
+/* all of the css overrides for when the 
+ * site goes mobile mode at < 720px */
+@media only screen and (max-width: 720px) {
+    .project-image {
+        max-width: 100%;
+        margin: auto;
+    }
+    .project-content {
+        margin-left: 5px;
+        min-width: 200px;
+        max-width: 100%;
+    }
+  }
