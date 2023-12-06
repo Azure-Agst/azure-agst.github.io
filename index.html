@@ -30,12 +30,25 @@
       </div>
       <br>
       <div>
+        <span id="joke"></span>
+        <script>
+        jokes = [
+          "Can you tell I'm more of a backend dev?", "Now with a degree!", "My other website looks much nicer!",
+          "Probably off starting another project...", "WSL/VSCode Enthusiast!", "Best friends with my rubber ducky!",
+          "Programmer's creed: \"We do these things not because they are easy, but because we thought they were going to be easy.\"",
+          ">>> import witty_one_liner from humor", "Compiles the first time, every time.", "Can an async function! properly write"
+        ];
+        document.getElementById("joke").innerHTML = jokes[Math.floor(Math.random() * jokes.length)];
+        </script>
+      </div>
+      <br>
+      <div>
         <h3>
           <a href="http://posts.azureagst.dev/">Blog</a> - 
+          <a href="assets/AAugustine_Resume_Dec2023_BSCS.pdf">Resume</a> - 
           <a href="http://github.com/Azure-Agst">GitHub</a> - 
           <a href="https://www.linkedin.com/in/aaugustine23/">LinkedIn</a> - 
-          <a href="https://steamcommunity.com/id/AzureAgst/">Steam</a> - 
-          <a href="https://keybase.io/azure_agst">Keybase</a>
+          <a href="mailto:me@azureagst.dev">Contact</a>
           <br>
         </h3>
       </div>
@@ -43,25 +56,20 @@
       <hr>
 
       <div>
-        <h2>Latest Notable Projects:</h2><br>
+        <h2>Notable Projects:</h2><br>
 
         <div class="project">
-          <img class="project-image" src="/assets/images/ghost_card.png">
+          <img class="project-image" src="/assets/images/lottopool_card.png">
           <div class="project-content">
-            <h3><a href="https://posts.azureagst.dev">posts.azureagst.dev</a></h3>
-            My blog! Whenever something interests me, I'll write about it. This mainly consists of
-            programming/hacking content, but will also occasionally include content about current events or
-            games. Hosted via K3S and Ghost CMS!
-          </div>
-        </div>
-
-        <div class="project">
-          <img class="project-image" src="/assets/images/k3s_card.png">
-          <div class="project-content">
-            <h3><a href="https://posts.azureagst.dev/tales-from-the-homelab/">RPi K3S Cluster</a></h3>
-            My latest endeavor in the world of cloud computing! I now have a little K3S sandbox in my closet
-            to mess around with! Also on the rack lives a WRT1200AC, Synology RS816, M93p Tiny, and a few Mac
-            Minis.
+            <h3><a href="https://github.com/FSU-SP2023-SELab/group-1-lottopool">Lottopool</a></h3>
+            Lottopool is the capstone project I submitted for my Computer Science degree. Myself and four others worked 
+            together to create this webapp consisting of a Typescript frontend, Python backend, and MariaDB Database; 
+            all compiled and served via two Docker images. It also includes automated testing, building, and 
+            distribution via GitHub Actions.
+            <br><br>
+            "This is in the top 3 projects that I have seen since 2019. Absolutely phenomenal job."
+            <br>
+            &nbsp;&nbsp;&nbsp;- Christopher Mills, Ph.D., Teaching Faculty
           </div>
         </div>
 
@@ -69,10 +77,57 @@
           <img class="project-image" src="/assets/images/canvas2_card.png">
           <div class="project-content">
             <h3><a href="https://github.com/Azure-Agst/Canvas2">Canvas2</a></h3>
-            Probably my most in-depth project for university yet, excluding the kernel plugin work I'm not
-            allowed to disclose yet. Canvas2 is a basic Canvas LMS recreation made using Flask and MongoDB.
-            It includes rudimentary plagarism detection, has a full test suite, and is designed to work in
-            containers.
+            Canvas2 is a recreation of the Canvas LMS software that I designed with a team for my Advanced Python class.
+            Under the hood, it uses Flask and MongoDB. Canvas2 includes a basic plagarism detection algorithm by 
+            implementing simhashes and the Jaccard Similarity formula. Lastly, it also includes automated testing,
+            building, and distribution via GitHub Actions.
+            <br><br>
+            "Please let me know if you want me to get you in contact with people who do this kind of stuff for a living."
+            <br>
+            &nbsp;&nbsp;&nbsp;- Sharanya Jayaraman, Teaching Faculty
+          </div>
+        </div>
+
+        <div class="project">
+          <img class="project-image" src="/assets/images/xldev_card.png">
+          <div class="project-content">
+            <h3><a href="https://github.com/Azure-Agst/DalamudRepo">FFXIV Dalamud Plugin Development</a></h3>
+            As a fun side-project and a means to keep my programming skills fresh, I now develop plugins for the 
+            critically acclaimed MMO <i>Final Fantasy XIV</i> in my free time! This hobby started with MapGilTracker, a
+            plugin I developed in collaboration with my FC that helps keep track of gil rewarded from Treasure Map runs.
+            These plugins are all written in C# and compiled/distributed via GitHub Actions.
+          </div>
+        </div>
+
+        <div class="project">
+          <img class="project-image" src="/assets/images/classbot_card.png">
+          <div class="project-content">
+            <h3><a href="https://github.com/Azure-Agst/classbot-3.0">Class Enrollment Automation Suite</a></h3>
+            Classbot is a tool that I worked on throughout my time as an FSU student, which automated the enrollment
+            procedure for students. Written in Python and utilizing the Selenium driver, Classbot helped myself
+            and several others get into congested classes that would have set us behind schedule had we not gotten in.
+            It is now open-source and available for any student to use or modify for their own use case!
+          </div>
+        </div>
+
+        <div class="project">
+          <img class="project-image" src="/assets/images/k3s_card.png">
+          <div class="project-content">
+            <h3><a href="https://posts.azureagst.dev/tales-from-the-homelab/">RPi K3S Cluster</a></h3>
+            My latest endeavor in the world of cloud computing! I now have a little server sandbox in my closet
+            to mess around with! On said the rack lives a WRT1200AC, Synology RS816, M93p Tiny, and a few Mac
+            Minis which are all configured in one big K3S kubernetes cluster. This cluster hosts a lot of software
+            in use by my home network including PiHole, Lancache, and various backup softwares.
+          </div>
+        </div>
+
+        <div class="project">
+          <img class="project-image" src="/assets/images/ghost_card.png">
+          <div class="project-content">
+            <h3><a href="https://posts.azureagst.dev">posts.azureagst.dev</a></h3>
+            My blog! Whenever something interests me, I'll write about it. This mainly consists of
+            programming/hacking content, but will also occasionally include content about current events or
+            games. Hosted via AWS EC2 and Ghost CMS!
           </div>
         </div>
 
@@ -83,6 +138,10 @@
       <div>
         Copyright (c) <span id="year"></span> Andrew "Azure_Agst" Augustine
         <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+      </div>
+
+      <div class="footer-message">
+        Psst! Have you tried refreshing the page yet?
       </div>
 
     </div>
